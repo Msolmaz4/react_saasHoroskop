@@ -1,0 +1,94 @@
+.head{
+    background-image: linear-gradient(225deg,#000,#cd890c 90%,#2b86c5);
+    
+    .head1 {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        height: 73px;
+        padding-top: 4rem;
+    }
+
+   .card-contanier{
+    margin-top: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-evenly;
+   
+    
+ 
+   
+    .cards{
+        display: inline-block;
+        border: 2px solid red;
+        width: 500px;
+        height: 350px;
+        gap: 2rem;
+        position: relative;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+        &:hover{
+            transform: scale(1.05);
+        }
+
+       .title{
+        background-color: rgba(0,0,0,.8);
+        color: #cd890c;
+        position: absolute;
+        z-index: 2;
+   
+        border-radius: 10px 20px 20px 20px;
+        width: 122px;
+        height: 70px;
+              .h1{
+               color: #cd890c;
+              }
+       }
+       
+
+     .date{
+   
+            background-color: rgba(0,0,0,.8);
+            color: #cd890c;
+            position: absolute;
+            z-index: 2;
+            border-radius: 10px;
+            font-size: .3rem;
+            left: 50%;
+            top: 50%;
+
+           h1{
+                color: #cd890c;
+                font-size: 9.6px;
+            }
+        }
+
+     img{
+            width: 500px;
+            height: 350px;
+      
+        }
+        
+
+     .card-over{
+        width: 100%;
+        height: 0;
+         left: 0;
+         position: absolute;
+           bottom: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        opacity: 0;
+        transition: all .3s;
+    
+       
+        }
+        &:hover .card-over {
+            opacity: 0.7;
+            height: 50%;
+           opacity: 0.8;
+           color: aliceblue;
+          } 
+    }
+}}
